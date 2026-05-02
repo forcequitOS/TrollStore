@@ -94,6 +94,7 @@ extern NSUserDefaults* trollStoreUserDefaults();
         break;
         case 186:
         errorDescription = @"The app you tried to install is not supported on this platform. The installation has been prevented as this application will not launch at all if it were to be installed.";
+        break;
     }
 
     NSError* error = [NSError errorWithDomain:TrollStoreErrorDomain code:code userInfo:@{NSLocalizedDescriptionKey : errorDescription}];
